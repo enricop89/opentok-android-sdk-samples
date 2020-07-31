@@ -10,10 +10,23 @@ tools:context="com.tokbox.android.tutorials.basic_video_chat.MainActivity">
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
+
         <FrameLayout
             android:id="@+id/subscriber_container"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"/>
+            android:layout_height="fill_parent">
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvContacts"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
 
         <FrameLayout
             android:id="@+id/publisher_container"
@@ -24,7 +37,9 @@ tools:context="com.tokbox.android.tutorials.basic_video_chat.MainActivity">
             android:layout_marginEnd="@dimen/publisher_right_margin"
             android:layout_marginRight="@dimen/publisher_end_margin"
             android:padding="@dimen/publisher_padding"
-            android:background="@color/publisher_border_color" />
+            android:background="@color/publisher_border_color" >
+
+        </FrameLayout>
 
     </FrameLayout>
 
